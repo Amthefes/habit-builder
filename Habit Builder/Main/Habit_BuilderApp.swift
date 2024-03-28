@@ -10,7 +10,7 @@ import SwiftUI
 struct Habit_BuilderApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashView()
         }
     }
 }

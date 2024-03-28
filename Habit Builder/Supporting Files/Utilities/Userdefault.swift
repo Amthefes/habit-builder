@@ -2,7 +2,21 @@
 //  Userdefault.swift
 //  Habit Builder
 //
-//  Created by Aiju Eldho Issac on 28/03/2024.
 //
 
 import Foundation
+
+extension UserDefaults {
+    
+    func updateIntroduction(isNeeded: Bool = true) {
+        UserDefaults.standard.set(isNeeded, forKey: "Introduction")
+    }
+    
+    func getIsIntroNeeded() -> Bool {
+        if let retrievedValue = UserDefaults.standard.object(forKey: "Introduction") as? Bool {
+            return retrievedValue
+        } else {
+            return true
+        }
+    }
+}

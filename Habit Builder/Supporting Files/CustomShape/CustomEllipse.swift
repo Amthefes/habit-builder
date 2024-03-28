@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct CustomEllipse: View {
+    let color: Color
+    let size: CGFloat
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Ellipse()
+            .foregroundColor(.clear)
+            .frame(width: size, height: size)
+            .background(color)
+            .shadow(color: Color(red: 0.34, green: 0.20, blue: 0.33, opacity: 0.15), radius: 60, y: 20)
+            .clipShape(RoundedRectangle(cornerRadius: 10))
     }
 }
 
 #Preview {
-    CustomEllipse()
+    CustomEllipse(color: .eclipse, size: 11)
 }
