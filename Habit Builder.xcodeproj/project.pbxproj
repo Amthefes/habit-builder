@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15433852FAF20829F0A77C93 /* Pods_Habit_Builder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F47F0CD39AB79BFF140642 /* Pods_Habit_Builder.framework */; };
+		2F4F10EF2BBA930500B8E966 /* RoutingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4F10EE2BBA930500B8E966 /* RoutingApp.swift */; };
+		2F4F10F22BBA93EC00B8E966 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4F10F12BBA93EC00B8E966 /* Router.swift */; };
+		2F4F10F42BBA9DE600B8E966 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F4F10F32BBA9DE600B8E966 /* GoogleService-Info.plist */; };
+		2F4F10F62BBAA2E300B8E966 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4F10F52BBAA2E300B8E966 /* AuthenticationViewModel.swift */; };
 		2FCD2E472BB5101C00BBC6DB /* Manrope-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FCD2E432BB5101B00BBC6DB /* Manrope-SemiBold.ttf */; };
 		2FCD2E482BB5101C00BBC6DB /* Manrope-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FCD2E442BB5101C00BBC6DB /* Manrope-Regular.ttf */; };
 		2FCD2E492BB5101C00BBC6DB /* Manrope-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FCD2E452BB5101C00BBC6DB /* Manrope-Medium.ttf */; };
@@ -25,6 +30,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F4F10EE2BBA930500B8E966 /* RoutingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingApp.swift; sourceTree = "<group>"; };
+		2F4F10F12BBA93EC00B8E966 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		2F4F10F32BBA9DE600B8E966 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2F4F10F52BBAA2E300B8E966 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		2FCD2E432BB5101B00BBC6DB /* Manrope-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-SemiBold.ttf"; sourceTree = "<group>"; };
 		2FCD2E442BB5101C00BBC6DB /* Manrope-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Regular.ttf"; sourceTree = "<group>"; };
 		2FCD2E452BB5101C00BBC6DB /* Manrope-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Medium.ttf"; sourceTree = "<group>"; };
@@ -42,6 +51,9 @@
 		2FE936922BB44E1F0011F818 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2FE936942BB44E210011F818 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FE936972BB44E210011F818 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3182967C552E5B391550CABF /* Pods-Habit Builder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Habit Builder.release.xcconfig"; path = "Target Support Files/Pods-Habit Builder/Pods-Habit Builder.release.xcconfig"; sourceTree = "<group>"; };
+		86F47F0CD39AB79BFF140642 /* Pods_Habit_Builder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Habit_Builder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E9EF70AE770661734B65DFE /* Pods-Habit Builder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Habit Builder.debug.xcconfig"; path = "Target Support Files/Pods-Habit Builder/Pods-Habit Builder.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,15 +61,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15433852FAF20829F0A77C93 /* Pods_Habit_Builder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F4F10F02BBA93B200B8E966 /* Navigation Router */ = {
+			isa = PBXGroup;
+			children = (
+				2F4F10EE2BBA930500B8E966 /* RoutingApp.swift */,
+				2F4F10F12BBA93EC00B8E966 /* Router.swift */,
+			);
+			path = "Navigation Router";
+			sourceTree = "<group>";
+		};
 		2FCD2E402BB50E6700BBC6DB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2F4F10F02BBA93B200B8E966 /* Navigation Router */,
 				2FCD2E562BB5461C00BBC6DB /* CustomShape */,
 				2FCD2E532BB53F3D00BBC6DB /* Utilities */,
 				2FCD2E422BB50ED600BBC6DB /* Font */,
@@ -117,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				2FCD2E5A2BB55EC900BBC6DB /* IntroductionViewModel.swift */,
+				2F4F10F52BBAA2E300B8E966 /* AuthenticationViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -124,7 +148,9 @@
 		2FE936842BB44E1F0011F818 = {
 			isa = PBXGroup;
 			children = (
+				A3D38B2F09ABBCC1A0D3F549 /* Frameworks */,
 				2FE9368F2BB44E1F0011F818 /* Habit Builder */,
+				57DCD3DDA8AC29A467542D8F /* Pods */,
 				2FE9368E2BB44E1F0011F818 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -140,6 +166,7 @@
 		2FE9368F2BB44E1F0011F818 /* Habit Builder */ = {
 			isa = PBXGroup;
 			children = (
+				2F4F10F32BBA9DE600B8E966 /* GoogleService-Info.plist */,
 				2FCD2E502BB5195C00BBC6DB /* Habit-Builder-Info.plist */,
 				2FCD2E412BB50EB600BBC6DB /* Main */,
 				2FE936962BB44E210011F818 /* Preview Content */,
@@ -158,6 +185,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		57DCD3DDA8AC29A467542D8F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E9EF70AE770661734B65DFE /* Pods-Habit Builder.debug.xcconfig */,
+				3182967C552E5B391550CABF /* Pods-Habit Builder.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A3D38B2F09ABBCC1A0D3F549 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86F47F0CD39AB79BFF140642 /* Pods_Habit_Builder.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -165,9 +209,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FE9369B2BB44E210011F818 /* Build configuration list for PBXNativeTarget "Habit Builder" */;
 			buildPhases = (
+				873FFDBD76AA5D5259825C85 /* [CP] Check Pods Manifest.lock */,
 				2FE936892BB44E1F0011F818 /* Sources */,
 				2FE9368A2BB44E1F0011F818 /* Frameworks */,
 				2FE9368B2BB44E1F0011F818 /* Resources */,
+				08027DC548877F15EA8D656D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FCD2E482BB5101C00BBC6DB /* Manrope-Regular.ttf in Resources */,
+				2F4F10F42BBA9DE600B8E966 /* GoogleService-Info.plist in Resources */,
 				2FE936982BB44E210011F818 /* Preview Assets.xcassets in Resources */,
 				2FCD2E472BB5101C00BBC6DB /* Manrope-SemiBold.ttf in Resources */,
 				2FE936952BB44E210011F818 /* Assets.xcassets in Resources */,
@@ -228,6 +275,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08027DC548877F15EA8D656D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Habit Builder/Pods-Habit Builder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Habit Builder/Pods-Habit Builder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Habit Builder/Pods-Habit Builder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		873FFDBD76AA5D5259825C85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Habit Builder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2FE936892BB44E1F0011F818 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -235,9 +324,12 @@
 			files = (
 				2FCD2E5D2BB577C300BBC6DB /* Userdefault.swift in Sources */,
 				2FE936932BB44E1F0011F818 /* ContentView.swift in Sources */,
+				2F4F10F22BBA93EC00B8E966 /* Router.swift in Sources */,
 				2FE936912BB44E1F0011F818 /* Habit_BuilderApp.swift in Sources */,
+				2F4F10F62BBAA2E300B8E966 /* AuthenticationViewModel.swift in Sources */,
 				2FCD2E522BB51CAF00BBC6DB /* IntroductionView.swift in Sources */,
 				2FCD2E582BB5466F00BBC6DB /* CustomEllipse.swift in Sources */,
+				2F4F10EF2BBA930500B8E966 /* RoutingApp.swift in Sources */,
 				2FCD2E5B2BB55EC900BBC6DB /* IntroductionViewModel.swift in Sources */,
 				2FCD2E4F2BB510E500BBC6DB /* SplashView.swift in Sources */,
 				2FCD2E552BB53F6F00BBC6DB /* UIExtensions.swift in Sources */,
@@ -368,6 +460,7 @@
 		};
 		2FE9369C2BB44E210011F818 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E9EF70AE770661734B65DFE /* Pods-Habit Builder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -401,6 +494,7 @@
 		};
 		2FE9369D2BB44E210011F818 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3182967C552E5B391550CABF /* Pods-Habit Builder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

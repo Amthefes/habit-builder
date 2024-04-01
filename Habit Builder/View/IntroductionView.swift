@@ -7,7 +7,9 @@
 import SwiftUI
 
 struct IntroductionView: View {
+    
     //MARK: variables
+    @EnvironmentObject var router: Router
     @State private var showSubview = false
     @StateObject var viewModel = IntroductionViewModel()
     

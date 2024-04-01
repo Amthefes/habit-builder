@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>87574460344-i2gedpb1tcclo5vu3n13r3pgmiqfkkac.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.87574460344-i2gedpb1tcclo5vu3n13r3pgmiqfkkac</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBpy6zcE9EixsB4QHoP-2WFYN7xW5SPTXM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>87574460344</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.app.Habit-Builder</string>
+	<key>PROJECT_ID</key>
+	<string>habit-builder-d4309</string>
+	<key>STORAGE_BUCKET</key>
+	<string>habit-builder-d4309.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:87574460344:ios:0f64dffee051ce5e6a414d</string>
+</dict>
+</plist>

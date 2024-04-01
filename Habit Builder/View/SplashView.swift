@@ -7,7 +7,9 @@
 import SwiftUI
 
 struct SplashView: View {
+    @EnvironmentObject var router: Router
     @State private var showLoginScreen = false
+    
     var body: some View {
         ZStack {
             //Image
