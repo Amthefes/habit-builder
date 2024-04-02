@@ -868,8 +868,6 @@ PODS:
     - AppAuth (< 2.0, >= 1.7.3)
     - GTMAppAuth (< 5.0, >= 4.1.1)
     - GTMSessionFetcher/Core (~> 3.3)
-  - GoogleSignInSwiftSupport (7.1.0):
-    - GoogleSignIn (~> 7.1)
   - GoogleUtilities/AppDelegateSwizzler (7.13.0):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
@@ -987,7 +985,6 @@ DEPENDENCIES:
   - FirebaseAuth
   - FirebaseFirestore
   - GoogleSignIn
-  - GoogleSignInSwiftSupport
 
 SPEC REPOS:
   trunk:
@@ -1003,7 +1000,6 @@ SPEC REPOS:
     - FirebaseFirestoreInternal
     - FirebaseSharedSwift
     - GoogleSignIn
-    - GoogleSignInSwiftSupport
     - GoogleUtilities
     - "gRPC-C++"
     - gRPC-Core
@@ -1027,7 +1023,6 @@ SPEC CHECKSUMS:
   FirebaseFirestoreInternal: 627b23f682c1c2aad38ba1345ed3ca6574c5a89c
   FirebaseSharedSwift: c92645b392db3c41a83a0aa967de16f8bad25568
   GoogleSignIn: d4281ab6cf21542b1cfaff85c191f230b399d2db
-  GoogleSignInSwiftSupport: bbbd5afe90c9e22e91d2fa5a55498e00e3227cef
   GoogleUtilities: d053d902a8edaa9904e1bd00c37535385b8ed152
   "gRPC-C++": 12f33a422dcab88dcd0c53e52cd549a929f0f244
   gRPC-Core: 6ec9002832e1e22c5bb8c54994b050b0ee4205c6
@@ -1038,6 +1033,6 @@ SPEC CHECKSUMS:
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
   RecaptchaInterop: 7d1a4a01a6b2cb1610a47ef3f85f0c411434cb21
 
-PODFILE CHECKSUM: 3fd6ed2a3874454e711170460c40fe0d6e68a887
+PODFILE CHECKSUM: 2f0d81d6297b7e5c367344774c06e5b6058edf2b
 
 COCOAPODS: 1.15.2

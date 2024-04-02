@@ -84,6 +84,7 @@ struct IntroductionView: View {
                 } else {
                     Button(action: {
                         UserDefaults.standard.updateIntroduction(isNeeded: false)
+                        router.navigate(to: .login)
                     }) {
                         Text("Get Started")
                             .font(.customFont(size: 17).weight(.bold))

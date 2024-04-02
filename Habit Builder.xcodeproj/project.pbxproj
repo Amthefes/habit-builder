@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		15433852FAF20829F0A77C93 /* Pods_Habit_Builder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F47F0CD39AB79BFF140642 /* Pods_Habit_Builder.framework */; };
-		2F4F10EF2BBA930500B8E966 /* RoutingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4F10EE2BBA930500B8E966 /* RoutingApp.swift */; };
 		2F4F10F22BBA93EC00B8E966 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4F10F12BBA93EC00B8E966 /* Router.swift */; };
 		2F4F10F42BBA9DE600B8E966 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F4F10F32BBA9DE600B8E966 /* GoogleService-Info.plist */; };
 		2F4F10F62BBAA2E300B8E966 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4F10F52BBAA2E300B8E966 /* AuthenticationViewModel.swift */; };
+		2F4F10F92BBAC53700B8E966 /* Pods_Habit_Builder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F47F0CD39AB79BFF140642 /* Pods_Habit_Builder.framework */; };
+		2F4F10FD2BBAC60D00B8E966 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4F10FC2BBAC60D00B8E966 /* LoginView.swift */; };
+		2F4F11012BBADD2A00B8E966 /* NavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4F11002BBADD2A00B8E966 /* NavigationStack.swift */; };
 		2FCD2E472BB5101C00BBC6DB /* Manrope-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FCD2E432BB5101B00BBC6DB /* Manrope-SemiBold.ttf */; };
 		2FCD2E482BB5101C00BBC6DB /* Manrope-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FCD2E442BB5101C00BBC6DB /* Manrope-Regular.ttf */; };
 		2FCD2E492BB5101C00BBC6DB /* Manrope-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FCD2E452BB5101C00BBC6DB /* Manrope-Medium.ttf */; };
@@ -30,10 +31,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2F4F10EE2BBA930500B8E966 /* RoutingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingApp.swift; sourceTree = "<group>"; };
 		2F4F10F12BBA93EC00B8E966 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		2F4F10F32BBA9DE600B8E966 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2F4F10F52BBAA2E300B8E966 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		2F4F10FC2BBAC60D00B8E966 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2F4F11002BBADD2A00B8E966 /* NavigationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStack.swift; sourceTree = "<group>"; };
 		2FCD2E432BB5101B00BBC6DB /* Manrope-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-SemiBold.ttf"; sourceTree = "<group>"; };
 		2FCD2E442BB5101C00BBC6DB /* Manrope-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Regular.ttf"; sourceTree = "<group>"; };
 		2FCD2E452BB5101C00BBC6DB /* Manrope-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Medium.ttf"; sourceTree = "<group>"; };
@@ -61,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15433852FAF20829F0A77C93 /* Pods_Habit_Builder.framework in Frameworks */,
+				2F4F10F92BBAC53700B8E966 /* Pods_Habit_Builder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,13 +73,13 @@
 		2F4F10F02BBA93B200B8E966 /* Navigation Router */ = {
 			isa = PBXGroup;
 			children = (
-				2F4F10EE2BBA930500B8E966 /* RoutingApp.swift */,
 				2F4F10F12BBA93EC00B8E966 /* Router.swift */,
+				2F4F11002BBADD2A00B8E966 /* NavigationStack.swift */,
 			);
 			path = "Navigation Router";
 			sourceTree = "<group>";
 		};
-		2FCD2E402BB50E6700BBC6DB /* Supporting Files */ = {
+		2FCD2E402BB50E6700BBC6DB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				2F4F10F02BBA93B200B8E966 /* Navigation Router */,
@@ -86,7 +88,7 @@
 				2FCD2E422BB50ED600BBC6DB /* Font */,
 				2FE936942BB44E210011F818 /* Assets.xcassets */,
 			);
-			path = "Supporting Files";
+			path = "Support Files";
 			sourceTree = "<group>";
 		};
 		2FCD2E412BB50EB600BBC6DB /* Main */ = {
@@ -115,6 +117,7 @@
 			children = (
 				2FCD2E4E2BB510E500BBC6DB /* SplashView.swift */,
 				2FCD2E512BB51CAF00BBC6DB /* IntroductionView.swift */,
+				2F4F10FC2BBAC60D00B8E966 /* LoginView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -170,7 +173,7 @@
 				2FCD2E502BB5195C00BBC6DB /* Habit-Builder-Info.plist */,
 				2FCD2E412BB50EB600BBC6DB /* Main */,
 				2FE936962BB44E210011F818 /* Preview Content */,
-				2FCD2E402BB50E6700BBC6DB /* Supporting Files */,
+				2FCD2E402BB50E6700BBC6DB /* Support Files */,
 				2FCD2E4D2BB510A600BBC6DB /* View */,
 				2FCD2E592BB55E9300BBC6DB /* View Models */,
 			);
@@ -328,10 +331,11 @@
 				2FE936912BB44E1F0011F818 /* Habit_BuilderApp.swift in Sources */,
 				2F4F10F62BBAA2E300B8E966 /* AuthenticationViewModel.swift in Sources */,
 				2FCD2E522BB51CAF00BBC6DB /* IntroductionView.swift in Sources */,
+				2F4F10FD2BBAC60D00B8E966 /* LoginView.swift in Sources */,
 				2FCD2E582BB5466F00BBC6DB /* CustomEllipse.swift in Sources */,
-				2F4F10EF2BBA930500B8E966 /* RoutingApp.swift in Sources */,
 				2FCD2E5B2BB55EC900BBC6DB /* IntroductionViewModel.swift in Sources */,
 				2FCD2E4F2BB510E500BBC6DB /* SplashView.swift in Sources */,
+				2F4F11012BBADD2A00B8E966 /* NavigationStack.swift in Sources */,
 				2FCD2E552BB53F6F00BBC6DB /* UIExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,6 +472,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Habit Builder/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Habit-Builder-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -502,6 +507,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Habit Builder/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Habit-Builder-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

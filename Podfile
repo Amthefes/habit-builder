@@ -10,6 +10,5 @@ target 'Habit Builder' do
   pod 'FirebaseAuth'
   pod 'FirebaseFirestore'
   pod 'GoogleSignIn'
-  pod 'GoogleSignInSwiftSupport'
 
 end

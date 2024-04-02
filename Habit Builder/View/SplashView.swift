@@ -8,7 +8,6 @@ import SwiftUI
 
 struct SplashView: View {
     @EnvironmentObject var router: Router
-    @State private var showLoginScreen = false
     
     var body: some View {
         ZStack {
@@ -31,18 +30,18 @@ struct SplashView: View {
             .padding(.top, 64)
         }
         .onAppear() {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.9) {
-                showLoginScreen = true
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                navigateToNextScreen()
             }
         }
-        .fullScreenCover(isPresented: $showLoginScreen, content: {
-            
-            if UserDefaults.standard.getIsIntroNeeded() {
-                IntroductionView()
-            } else {
-                ContentView()
-            }
-        })
+    }
+    
+    func navigateToNextScreen() {
+        if UserDefaults.standard.getIsIntroNeeded() {
+            router.navigate(to: .introduction)
+        } else {
+            router.navigate(to: .login)
+        }
     }
 }
 
