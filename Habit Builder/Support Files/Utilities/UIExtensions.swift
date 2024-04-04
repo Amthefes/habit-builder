@@ -57,33 +57,3 @@ extension View {
         return self.navigationBarTitle(title)
     }
 }
-
-extension View {
-    func navigationDestination<Destination: View>(
-        for destination: Destination.Type,
-        router: Router,
-        content: @escaping () -> Destination
-    ) -> some View {
-        return self.background(
-            NavigationLink(
-                destination: {
-                    if router.navPath.last as? Destination != nil {
-                        return AnyView(content())
-                    } else {
-                        // Return an empty AnyView if the condition is not met
-                        return AnyView(EmptyView())
-                    }
-                },
-                label: {
-                    EmptyView()
-                }
-            )
-        )
-    }
-}
-
-
-
-
-
-

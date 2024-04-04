@@ -5,20 +5,22 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct SplashView: View {
-    @EnvironmentObject var router: Router
+    
+    @State private var isActive: Bool = false
     
     var body: some View {
         ZStack {
-            //Image
+            // Image
             Image("LaunchImage")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(minWidth: 0, maxWidth: .infinity)
                 .ignoresSafeArea(.all)
             VStack {
-                //Text
+                // Text
                 Text("WELCOME TO\nMonumental\nhabits")
                     .font(.customFontForHeader(size: 40))
                     .foregroundColor(.primaryColor)
@@ -31,16 +33,21 @@ struct SplashView: View {
         }
         .onAppear() {
             DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                navigateToNextScreen()
+                withAnimation { // Add animation for smoother transition (optional)
+                    isActive = true
+                }
             }
         }
-    }
-    
-    func navigateToNextScreen() {
-        if UserDefaults.standard.getIsIntroNeeded() {
-            router.navigate(to: .introduction)
-        } else {
-            router.navigate(to: .login)
+        .fullScreenCover(isPresented: $isActive) {
+            if Auth.auth().currentUser?.uid != nil {
+                
+            } else {
+                if UserDefaults.standard.getIsIntroNeeded() {
+                    IntroductionView()
+                } else {
+                    LoginView()
+                }
+            }
         }
     }
 }

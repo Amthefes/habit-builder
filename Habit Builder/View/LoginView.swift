@@ -7,7 +7,7 @@ import SwiftUI
 
 struct LoginView: View {
     
-    @EnvironmentObject var viewModel: AuthenticationViewModel
+    @StateObject var viewModel = AuthenticationViewModel()
     
     var body: some View {
         ZStack {

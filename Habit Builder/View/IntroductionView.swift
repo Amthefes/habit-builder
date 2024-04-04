@@ -9,9 +9,9 @@ import SwiftUI
 struct IntroductionView: View {
     
     //MARK: variables
-    @EnvironmentObject var router: Router
     @State private var showSubview = false
     @StateObject var viewModel = IntroductionViewModel()
+    @State private var isLoginViewPresented = false
     
     var body: some View {
         ZStack {
@@ -84,7 +84,7 @@ struct IntroductionView: View {
                 } else {
                     Button(action: {
                         UserDefaults.standard.updateIntroduction(isNeeded: false)
-                        router.navigate(to: .login)
+                        isLoginViewPresented = true
                     }) {
                         Text("Get Started")
                             .font(.customFont(size: 17).weight(.bold))
@@ -97,6 +97,9 @@ struct IntroductionView: View {
                     .cornerRadius(8)
                     .padding(.horizontal, 16)
                     .padding(.bottom, 20)
+                    .fullScreenCover(isPresented: $isLoginViewPresented) {
+                        LoginView()
+                    }
                 }
             }
         }

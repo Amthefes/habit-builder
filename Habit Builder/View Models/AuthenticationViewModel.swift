@@ -7,6 +7,7 @@
 import Foundation
 import GoogleSignIn
 import FirebaseAuth
+import FirebaseCore
 
 class AuthenticationViewModel: ObservableObject {
     
@@ -18,7 +19,11 @@ class AuthenticationViewModel: ObservableObject {
     @Published var state: SignInState = .signedOut
     
     func signIn() {
-        // 1
+        
+        guard let clientID = FirebaseApp.app()?.options.clientID else { return }
+        let config = GIDConfiguration(clientID: clientID)
+        GIDSignIn.sharedInstance.configuration = config
+        
         if GIDSignIn.sharedInstance.hasPreviousSignIn() {
             GIDSignIn.sharedInstance.restorePreviousSignIn { [weak self] user, error in
                 self?.authenticateUser(for: user, with: error)
@@ -32,6 +37,7 @@ class AuthenticationViewModel: ObservableObject {
                 self?.authenticateUser(for: result?.user, with: error)
             }
         }
+
     }
     
     private func authenticateUser(for user: GIDGoogleUser?, with error: Error?) {

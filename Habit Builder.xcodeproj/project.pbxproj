@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F4F10F22BBA93EC00B8E966 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4F10F12BBA93EC00B8E966 /* Router.swift */; };
+		2F33E1B12BBD84C0008BE553 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F33E1B02BBD84C0008BE553 /* Functions.swift */; };
 		2F4F10F42BBA9DE600B8E966 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F4F10F32BBA9DE600B8E966 /* GoogleService-Info.plist */; };
 		2F4F10F62BBAA2E300B8E966 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4F10F52BBAA2E300B8E966 /* AuthenticationViewModel.swift */; };
 		2F4F10F92BBAC53700B8E966 /* Pods_Habit_Builder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F47F0CD39AB79BFF140642 /* Pods_Habit_Builder.framework */; };
 		2F4F10FD2BBAC60D00B8E966 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4F10FC2BBAC60D00B8E966 /* LoginView.swift */; };
-		2F4F11012BBADD2A00B8E966 /* NavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4F11002BBADD2A00B8E966 /* NavigationStack.swift */; };
+		2F8962772BBE8CC500CCE7A4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8962762BBE8CC500CCE7A4 /* HomeView.swift */; };
 		2FCD2E472BB5101C00BBC6DB /* Manrope-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FCD2E432BB5101B00BBC6DB /* Manrope-SemiBold.ttf */; };
 		2FCD2E482BB5101C00BBC6DB /* Manrope-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FCD2E442BB5101C00BBC6DB /* Manrope-Regular.ttf */; };
 		2FCD2E492BB5101C00BBC6DB /* Manrope-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FCD2E452BB5101C00BBC6DB /* Manrope-Medium.ttf */; };
@@ -31,11 +31,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2F4F10F12BBA93EC00B8E966 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		2F33E1B02BBD84C0008BE553 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		2F4F10F32BBA9DE600B8E966 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2F4F10F52BBAA2E300B8E966 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		2F4F10FC2BBAC60D00B8E966 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		2F4F11002BBADD2A00B8E966 /* NavigationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStack.swift; sourceTree = "<group>"; };
+		2F8962762BBE8CC500CCE7A4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		2FCD2E432BB5101B00BBC6DB /* Manrope-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-SemiBold.ttf"; sourceTree = "<group>"; };
 		2FCD2E442BB5101C00BBC6DB /* Manrope-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Regular.ttf"; sourceTree = "<group>"; };
 		2FCD2E452BB5101C00BBC6DB /* Manrope-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Medium.ttf"; sourceTree = "<group>"; };
@@ -70,19 +70,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2F4F10F02BBA93B200B8E966 /* Navigation Router */ = {
-			isa = PBXGroup;
-			children = (
-				2F4F10F12BBA93EC00B8E966 /* Router.swift */,
-				2F4F11002BBADD2A00B8E966 /* NavigationStack.swift */,
-			);
-			path = "Navigation Router";
-			sourceTree = "<group>";
-		};
 		2FCD2E402BB50E6700BBC6DB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2F4F10F02BBA93B200B8E966 /* Navigation Router */,
 				2FCD2E562BB5461C00BBC6DB /* CustomShape */,
 				2FCD2E532BB53F3D00BBC6DB /* Utilities */,
 				2FCD2E422BB50ED600BBC6DB /* Font */,
@@ -91,13 +81,13 @@
 			path = "Support Files";
 			sourceTree = "<group>";
 		};
-		2FCD2E412BB50EB600BBC6DB /* Main */ = {
+		2FCD2E412BB50EB600BBC6DB /* App */ = {
 			isa = PBXGroup;
 			children = (
 				2FE936922BB44E1F0011F818 /* ContentView.swift */,
 				2FE936902BB44E1F0011F818 /* Habit_BuilderApp.swift */,
 			);
-			path = Main;
+			path = App;
 			sourceTree = "<group>";
 		};
 		2FCD2E422BB50ED600BBC6DB /* Font */ = {
@@ -118,6 +108,7 @@
 				2FCD2E4E2BB510E500BBC6DB /* SplashView.swift */,
 				2FCD2E512BB51CAF00BBC6DB /* IntroductionView.swift */,
 				2F4F10FC2BBAC60D00B8E966 /* LoginView.swift */,
+				2F8962762BBE8CC500CCE7A4 /* HomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -127,6 +118,7 @@
 			children = (
 				2FCD2E542BB53F6F00BBC6DB /* UIExtensions.swift */,
 				2FCD2E5C2BB577C300BBC6DB /* Userdefault.swift */,
+				2F33E1B02BBD84C0008BE553 /* Functions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -171,7 +163,7 @@
 			children = (
 				2F4F10F32BBA9DE600B8E966 /* GoogleService-Info.plist */,
 				2FCD2E502BB5195C00BBC6DB /* Habit-Builder-Info.plist */,
-				2FCD2E412BB50EB600BBC6DB /* Main */,
+				2FCD2E412BB50EB600BBC6DB /* App */,
 				2FE936962BB44E210011F818 /* Preview Content */,
 				2FCD2E402BB50E6700BBC6DB /* Support Files */,
 				2FCD2E4D2BB510A600BBC6DB /* View */,
@@ -223,6 +215,8 @@
 			dependencies = (
 			);
 			name = "Habit Builder";
+			packageProductDependencies = (
+			);
 			productName = "Habit Builder";
 			productReference = 2FE9368D2BB44E1F0011F818 /* Habit Builder.app */;
 			productType = "com.apple.product-type.application";
@@ -251,6 +245,8 @@
 				Base,
 			);
 			mainGroup = 2FE936842BB44E1F0011F818;
+			packageReferences = (
+			);
 			productRefGroup = 2FE9368E2BB44E1F0011F818 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -327,7 +323,6 @@
 			files = (
 				2FCD2E5D2BB577C300BBC6DB /* Userdefault.swift in Sources */,
 				2FE936932BB44E1F0011F818 /* ContentView.swift in Sources */,
-				2F4F10F22BBA93EC00B8E966 /* Router.swift in Sources */,
 				2FE936912BB44E1F0011F818 /* Habit_BuilderApp.swift in Sources */,
 				2F4F10F62BBAA2E300B8E966 /* AuthenticationViewModel.swift in Sources */,
 				2FCD2E522BB51CAF00BBC6DB /* IntroductionView.swift in Sources */,
@@ -335,8 +330,9 @@
 				2FCD2E582BB5466F00BBC6DB /* CustomEllipse.swift in Sources */,
 				2FCD2E5B2BB55EC900BBC6DB /* IntroductionViewModel.swift in Sources */,
 				2FCD2E4F2BB510E500BBC6DB /* SplashView.swift in Sources */,
-				2F4F11012BBADD2A00B8E966 /* NavigationStack.swift in Sources */,
+				2F8962772BBE8CC500CCE7A4 /* HomeView.swift in Sources */,
 				2FCD2E552BB53F6F00BBC6DB /* UIExtensions.swift in Sources */,
+				2F33E1B12BBD84C0008BE553 /* Functions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
